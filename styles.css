@@ -1,0 +1,155 @@
+/* ------------------------Global Styles------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(183, 121, 172);
+    line-height: 1.5rem;
+    font-family: 'Quicksand',sans-serif;
+}
+
+/* ------------------------Input & Display------------------------ */
+body>div{
+    min-width: 65%;
+    padding: 0 5%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 12%;
+    font-family: 'Caveat', sans-serif;
+    font-size: 3.5rem;
+    color: rgb(114, 61, 106);
+}
+
+.user-input{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+label{
+    font-size: 1.5rem;
+    padding: 1%;
+    color: rgb(114, 61, 106);
+}
+
+#task{
+    width: 50%;
+    margin-left: 0;
+    padding: 1%;
+    border-radius: 20px;
+    height: 43px;
+    font-size: 0.9rem;
+    background-color: #ffffff88;
+    border: none;
+}
+
+button{
+    padding: 1%;
+    border-radius: 25px;
+    border: transparent double rgb(114, 61, 106);
+    height: 43px;
+    font-size: 0.9rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.304) ;
+    color: rgb(255, 208, 243);
+    background-color: rgb(114, 61, 106);
+    font-weight: bold;
+}
+
+button:active{
+    font-size: 1.01rem;
+}
+
+button:nth-child(odd):hover{
+    border: transparent double rgb(87, 114, 61);
+    color: rgb(227, 255, 208);
+    background-color: rgb(85, 114, 61);
+}
+
+button:nth-child(even):hover{
+    border: transparent double rgb(114, 61, 61);
+    color: rgb(255, 208, 208);
+    background-color: rgb(123, 38, 38);
+}
+
+.display{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.7%;
+    font-size: large;
+    background-color: rgb(144, 86, 135);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.304) ;
+    margin-bottom: 1%;
+    color: rgb(255, 208, 243);
+    font-weight: bolder;
+}
+
+.progress{
+    text-align: right;
+}
+
+#completed-count{
+    color: rgb(171, 233, 95);
+}
+
+#pending-count{
+    color: rgb(255, 161, 161);
+}
+
+/* ------------------------Table------------------------ */
+
+table{
+    border-collapse: collapse;
+    padding: 1%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.table{
+    margin-top: 0.5%;
+    background-color: #ffffff45;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.304) ;
+    color: rgb(114, 61, 106);
+}
+
+thead{
+    background-color: #ffffff45;
+}
+
+th{
+    font-weight: bold;
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff45;
+}
+
+.tbtns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tbtns button{
+    height: 43px;
+    padding: 2%;
+    width: 70px;
+}

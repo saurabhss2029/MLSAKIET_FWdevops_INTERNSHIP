@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+   <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+   <title>TO-DO List</title>
+</head>
+
+<body>
+    <div>
+        <h1><nobr>Create your own To-Do List!</nobr></h1>
+            <div class="user-input">
+                <label for="task">Enter Task :</label>
+                <input type="text" id="task" placeholder="Let's add something worth doing!">
+                <button  id="addtask">Add to List</button>
+                <button  id="clear" onclick="clearStorage()">Clear List</button>
+            </div>
+            <div>
+                <span class="display">
+                    <h2>Your Items:</h2>
+                    <span class="progress">
+                        <p>Completed: <span id="completed-count">0</span> || Pending: <span id="pending-count">0</span></p>
+                        <!-- <p>Pending: <span id="pending-count">0</span></p> -->
+                    </span>
+                </span>
+                <section class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="c">Serial No.</th>
+                                <th scope="c">Task</th>
+                                <th scope="c">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr>
+                                <th scope="r">1</th>
+                                <td>Post this on LinkedIn!</td>
+                                <td class="tbtns"><button>Done</button>
+                                <button>Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section class="table">
+            </div>
+            <script src="javascript.js"></script>
+</body>
+</html>
